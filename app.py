@@ -1,58 +1,22 @@
-from flask import Flask
-from flask import abort
+from flask import Flask, abort
 import csv
 import json
+import os
 
 app = Flask(__name__)
 
-@app.route('/services/police')
-def police():
-    return json.dumps(read_csv('data/services/police.csv'))
+def find_by_field_value(array, field, value):
+    for item in array:
+        if field in item and str(item[field]) == str(value):
+            return item
+    return None
 
-@app.route('/services/fire')
-def fire():
-    return json.dumps(read_csv('data/services/fire.csv'))
-
-@app.route('/services/ambulance')
-def amulance():
-    return json.dumps(read_csv('data/services/ambulance.csv'))
-
-@app.route('/services/lifeboat')
-def lifeboat():
-    return json.dumps(read_csv('data/services/lifeboat.csv'))
-
-@app.route('/services/coastguard')
-def coastguard():
-    return json.dumps(read_csv('data/services/coastguard.csv'))
-
-@app.route('/buildings/listed')
-def buildings_listed():
-    return json.dumps(read_csv('data/buildings/listed.csv'))
-
-@app.route('/buildings/listed/<int:building_id>')
-def buildings_listed_by_index(building_id):
-    data = read_csv('data/buildings/listed.csv')
-    for building in data:
-        if int(building['id']) == building_id:
-            return json.dumps(building)
-    abort(404)
-
-@app.route('/buildings/listed/<int:building_id>/<field>')
-def get_building_field_by_id(building_id, field):
-    data = read_csv('data/buildings/listed.csv')
-    building = None
-    for b in data:
-        if int(b['id']) == building_id:
-            building = b
-            break
-    if not building:
-        abort(404)
-    if field in building:
-        wrap = {}
-        wrap[field] = building[field]
-        return json.dumps(wrap)
-    else:
-        abort(404)
+def dict_for_field(data, field):
+    if not data or not field or not field in data:
+        return None
+    json = {}
+    json[field] = data[field]
+    return json
 
 def read_csv(f):
     out = []
@@ -60,18 +24,46 @@ def read_csv(f):
         reader = csv.reader(data)
         keys = []
         read_keys = False
+        idx = 0
         for row in reader:
             if not read_keys:
                 keys = [key.lower() for key in row]
+                if not 'id' in keys:
+                    keys.append('id')
                 read_keys = True
             else:
                 data = {}
-                i = 0
-                for value in row:
-                    data[str(keys[i])] = value
-                    i += 1
+                for i in range(len(row)):
+                    data[str(keys[i])] = row[i]
+                if not 'id' in data:
+                    data['id'] = idx
                 out.append(data)
+                idx += 1
     return out
 
+@app.route('/<controller>/<data>')
+@app.route('/<controller>/<data>/<identity>')
+@app.route('/<controller>/<data>/<identity>/<field>')
+def handle(controller, data, identity=None, field=None):
+    f = "data/" + controller + "/" + data + ".csv"
+    if not os.path.exists(f):
+        abort(404)
+    csv = read_csv(f)
+    if not identity and not field:
+        return json.dumps(csv)
+    item = {}
+    if identity:
+        item = find_by_field_value(csv, 'id', identity)
+        if not item:
+            abort(404)
+    if not field:
+        return json.dumps(item)
+    else:
+        out = dict_for_field(item, field)
+        if out:
+            return json.dumps(out)
+        else:
+            abort(404)
+        
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
