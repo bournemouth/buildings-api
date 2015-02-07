@@ -2,6 +2,7 @@ from flask import Flask, abort, Response
 import csv
 import json
 import os
+import re
 
 app = Flask(__name__)
 
@@ -39,13 +40,19 @@ def read_csv(f):
                 else:
                     data = {}
                     for i in range(len(row)):
-                        data[str(keys[i])] = row[i]
+                        data[str(keys[i])] = format_row_data(row[i])
                     if not 'id' in data:
                         data['id'] = idx
                     out.append(data)
                     idx += 1
         cache[f] = out
     return out
+
+
+def format_row_data(data):
+    if re.search('^[A-Z0-9\ \,\.]*$', data):
+        data = data.title()
+    return data;
 
 def json_response(data):
     return Response(json.dumps(data), content_type='application/json; charset=utf-8')
@@ -109,4 +116,8 @@ def handle(controller, data, identity=None, field=None):
             abort(404)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    if 'PORT' in os.environ:
+        http_port = int(os.environ['PORT'])
+    else:
+        http_port = None
+    app.run(host='0.0.0.0', debug=True, port=http_port)
