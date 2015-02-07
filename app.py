@@ -52,7 +52,10 @@ def read_csv(f):
                 else:
                     data = {}
                     for i in range(len(row)):
-                        data[str(keys[i])] = format_row_data(row[i])
+                        value = format_row_data(row[i])
+                        if not value:
+                            continue
+                        data[str(keys[i])] = value
                     if not 'id' in data:
                         data['id'] = idx
                     out.append(data)
