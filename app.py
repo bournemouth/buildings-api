@@ -75,4 +75,8 @@ def handle(controller, data, identity=None, field=None):
             abort(404)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    if 'PORT' in os.environ:
+        http_port = int(os.environ['PORT'])
+    else:
+        http_port = None
+    app.run(host='0.0.0.0', debug=True, port=http_port)
