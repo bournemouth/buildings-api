@@ -48,10 +48,7 @@ def read_csv(f):
         cache[f] = out
     return out
 
-
 def format_row_data(data):
-    if re.search('^[A-Z0-9\ \,\.]*$', data):
-        data = data.title()
     return data;
 
 def json_response(data):
@@ -72,19 +69,21 @@ def index():
         obj['_links'] = {'self':{'href': '/' + res}}
         resources.append(obj)
     response['_embedded']['resources'] = resources
-    return json.dumps(response)
+    return json_response(response)
 
 @app.route('/<controller>')
 def controller(controller):
     response = {'_embedded':{}}
     resources = []
+    if not os.path.exists('data/' + controller):
+        abort(404)
     for res in os.listdir('data/' + controller):
         obj = {}
         obj['name'] = res.split('.')[0]
-        obj['_links'] = {'self':{'href': '/' + res.split('.')[0]}}
+        obj['_links'] = {'self':{'href': '/' + controller + '/' + res.split('.')[0]}}
         resources.append(obj)
     response['_embedded']['resources'] = resources
-    return json.dumps(response)
+    return json_response(response)
 
 @app.route('/<controller>/<data>')
 @app.route('/<controller>/<data>/<identity>')
