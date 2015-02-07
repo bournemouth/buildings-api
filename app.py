@@ -33,9 +33,26 @@ def buildings_listed():
 def buildings_listed_by_index(building_id):
     data = read_csv('data/buildings/listed.csv')
     for building in data:
-        if int(building.get('id')) == building_id:
+        if int(building['id']) == building_id:
             return json.dumps(building)
     abort(404)
+
+@app.route('/buildings/listed/<int:building_id>/<field>')
+def get_building_field_by_id(building_id, field):
+    data = read_csv('data/buildings/listed.csv')
+    building = None
+    for b in data:
+        if int(b['id']) == building_id:
+            building = b
+            break
+    if not building:
+        abort(404)
+    if field in building:
+        wrap = {}
+        wrap[field] = building[field]
+        return json.dumps(wrap)
+    else:
+        abort(404)
 
 def read_csv(f):
     out = []
