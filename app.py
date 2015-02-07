@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import abort
 import csv
 import json
 
@@ -27,6 +28,14 @@ def coastguard():
 @app.route('/buildings/listed')
 def buildings_listed():
     return json.dumps(read_csv('data/buildings/listed.csv'))
+
+@app.route('/buildings/listed/<int:building_id>')
+def buildings_listed_by_index(building_id):
+    data = read_csv('data/buildings/listed.csv')
+    for building in data:
+        if int(building.get('id')) == building_id:
+            return json.dumps(building)
+    abort(404)
 
 def read_csv(f):
     out = []
