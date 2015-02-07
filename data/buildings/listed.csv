@@ -1,0 +1,252 @@
+"ID","Name","Buildings","Grade","Structure","Principal","Greenback"
+1,"Albert Road, Former Theatre Royal",1,"Two",0,1,1
+2,"Albert Road, Presbytery of Sacred Heart Church",1,"Two",0,1,2
+3,"Albert Road, Church of The Sacred Heart",1,"Two",0,1,3
+4,"Alum Chine Road, Westbourne Library",1,"Two",0,1,4
+5,"Alumhurst Road, 49, Lodge to Herbert Hospital",1,"Two",0,1,5
+6,"Alumhurst Road, Herbert Hospital & Summerhouse",6,"Two",0,2,6
+7,"Alumhurst Road, 92, Old Lodge",1,"Two",0,1,7
+8,"Alumhurst Road, Branksome Dene",1,"Two",0,1,8
+9,"Bath Road, Royal Bath Hotel",1,"Two",0,1,9
+10,"Beacon Road, Highcliff Houses",6,"Two",0,6,10
+11,"Benellen Avenue, 1, Tower Gates",1,"Two",0,1,11
+12,"Bennett Road, Church of Saint Andrew",1,"C",0,1,12
+13,"Berry Lane, Muccleshell Farm",2,"Two",0,1,13
+14,"Bodorgan Road, 23, ""Saint Cross""",1,"Two",0,1,14
+15,"Bourne Avenue, Richmond Hill United Reformed Church",3,"Two",0,2,15
+16,"Braidley Road, 20, ""Ouplaymoor""",1,"Two",0,1,16
+17,"Broadway Lane, 209, The Manse",1,"Two",0,1,17
+18,"Broadway Lane, 228, The Shack",1,"Two",0,1,18
+19,"Broadway Lane, Gas Street Lamp",0,"Two",1,0,19
+20,"Broadway Lane, Gas Street Lamp",0,"Two",1,0,19
+21,"Castlemain Avenue, Church of All Saints",1,"B",0,1,20
+22,"Cavendish Road, Dean Park Cricket Ground",4,"Two",0,1,21
+23,"Charminster Road, Church of The Annunciation",3,"Two*",0,1,22
+24,"Charminster Road, Church of Saint Alban",2,"B",0,1,23
+25,"Chaseside, Littledown House",1,"Two",0,1,24
+26,"Christchurch Road, College and Public Library",5,"Two",0,2,25
+27,"Christchurch Road, 39, Natural Science Society",1,"Two",0,1,26
+28,"Christchurch Road, 62, Chine Pines",3,"Two",0,1,27
+29,"Christchurch Road, 443 - 451",5,"Two",0,5,28
+30,"Christchurch Road, Church of Saint John The Evangelist",2,"B",0,1,29
+31,"Christchurch Road, 506",1,"Two",0,1,30
+32,"Christchurch Road, 562 - 566, Royal Arcade",30,"Two",0,1,31
+33,"Christchurch Road, 568 - 578 Former Boscombe Hippodrome",5,"Two",0,1,32
+34,"Christchurch Road, 755, Portman Lodge",1,"Two",0,1,33
+35,"Christchurch Road, Corpus Christi Roman Catholic Church",2,"Two",0,1,34
+36,"Christchurch Road, Church of Saint James",1,"B",0,1,35
+38,"Church Lane, Holdenhurst, 21 & 22",2,"Two",0,2,36
+39,"Church Road, Church of Saint Katharine",2,"C",0,1,38
+40,"Columbia Road, 74, ""Lollipop Farmhouse""",1,"Two",0,1,39
+41,"Commercial Road, 152 - 154, Branksome Arms",1,"Two",0,1,40
+42,"Derby Road, 26, Langtry Manor Hotel",1,"Two",0,1,41
+43,"Douglas Mews, 30 - 40, Stourfield House stairs",0,"Two",1,0,42
+44,"Durley Road, 3, Washington Hotel",1,"Two",0,1,43
+45,"Durley Road, 5, Durley Court",1,"Two",0,1,43
+46,"East Howe Lane, The Thatched House",1,"Two",0,1,44
+47,"East Howe Lane, 119 & 121, Primrose Cottages",2,"Two",0,2,45
+48,"Exeter Road, Saint Andrew's United Reformed Church",2,"Two",0,1,46
+49,"Exeter Road, Royal Exeter Hotel",1,"Two",0,1,47
+50,"Exeter Road, Brookside & Brookside Cottage",1,"Two",0,1,48
+51,"Florence Road, Church of Saint Andrew",1,"B",0,1,49
+52,"Gervis Place, 13-17, Westover Mansions and shops",2,"Two",0,2,50
+53,"Gervis Place, 14, Gervis Hall",1,"Two",0,1,51
+54,"Gervis Place, 18, Dingles",1,"Two",0,1,52
+55,"Gervis Road, 18, Ascham House",3,"Two",0,1,53
+56,"Gervis Road, 24, Woodcote",1,"Two",0,1,54
+57,"Gervis Road, 9, Earls Court",1,"Two",0,1,55
+58,"Gervis Road, Church of Saint Swithun",1,"B",0,1,56
+59,"Gervis Road, Saint Swithun's Church Hall",1,"Two",0,1,57
+60,"Gloucester Road, East Cemetery Chapels",6,"Two",0,1,58
+61,"Grove Road, 4, Gresham Court Hotel",1,"Two",0,1,59
+62,"Hinton Road, Church of Saint Peter",1,"A",0,1,60
+68,"Holdenhurst Road, 28 - 36 Former Fire Station",3,"Two",0,1,66
+69,"Holdenhurst Road, East Cliff United Reformed Church",1,"Two",0,1,67
+70,"Holdenhurst Road, Central Railway Station",3,"Two",0,1,68
+73,"Holdenhurst Road, 224, Formerly Kosher Butcher's Shop",1,"Two",0,1,71
+74,"Holdenhurst Road, adj 317, Gents' Lavatories",1,"Two",0,1,72
+75,"Holdenhurst Road, 408-422 Church of Saint Mary",1,"Two",0,1,73
+76,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+77,"Holdenhurst Village Street, 14, Former Blacksmiths",2,"Two",0,2,74
+78,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+79,"Holdenhurst Village Street, School House",1,"Two",0,1,75
+80,"Holdenhurst Village Street, The Old School House",2,"Two",0,1,76
+81,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+82,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+83,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+84,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+85,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+86,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+87,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+88,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+89,"Holdenhurst Village Street, 16, ""New House""",2,"Two",0,1,77
+90,"Holdenhurst Village Street, 17, ""Old House""",1,"Two",0,1,78
+91,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+92,"Holdenhurst Village Street, 20, ""Hollyhurst""",1,"Two",0,1,79
+93,"Holdebhurst Village Street, Church of Saint John",1,"B",0,1,80
+97,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+98,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+100,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+101,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+102,"Holdenhurst Village Street, Gas Street Lamp",0,"Two",1,0,19
+104,"Iford Lane, Pumping Station at The Old Water Works",6,"Two",0,1,84
+105,"Iford Lane, Superintendent's House at The Old Water Works",1,"Two",0,1,85
+106,"Ken Road, 7-11, Stourcliff House",1,"Two",0,1,86
+107,"Knole Road, The Knole, Freemasons' Hall",2,"Two",0,1,87
+108,"Littledown Drive, Littledown Lodge",1,"Two",0,1,88
+109,"Manor Farm Road, 1, Kinson Vicarage",1,"Two",0,1,89
+110,"Manor Farm Road, 102 & 103, Lady Wimborne Cottages",2,"Two",0,2,90
+111,"Manor Farm Road, Manor Farmhouse",1,"Two",0,1,91
+112,"Manor Farm Road, Manor Farmhouse gate piers and wall",0,"Two",1,0,92
+113,"Mc William Road, 1 ""Moorside Cottage""",1,"Two",0,1,93
+114,"Meyrick Road, Penfold Pillarbox at Gervis Road junction",0,"Two",1,0,94
+115,"Meyrick Road, K6 Telephone Kiosks outside Library",0,"Two",4,0,95
+116,"Millhams Road, Pelhams Community Centre",4,"Two",0,1,96
+117,"Millhams Road, wall to Pelhams Community Centre",0,"Two",1,0,97
+118,"Millhams Road, Church of Saint Andrew",1,"B",0,1,98
+121,"Muscliff Lane, Muscliff House",1,"Two",0,1,101
+122,"Muscliff Lane, Throop United Reformed Church",2,"Two",0,1,102
+123,"Muscliff Lane, Throop United Reformed Church, Graveyard Wall",0,"Two",1,0,103
+124,"Norwich Road, 11 & 13, Hill View Lodge",2,"Two",0,2,104
+125,"Old Bridge Road, Iford Bridge & Causeway",0,"Two",1,0,105
+126,"Old Christchurch Road, 1 - 5, National Westminster Bank",2,"Two",0,2,106
+127,"Old Christchurch Road, Bournemouth Arcade 1 - 23",19,"Two",0,1,107
+128,"Old Christchurch Road, 45 - 47, Lloyd's Bank",2,"Two",0,2,108
+129,"Old Christchurch Road, 49 - 51, Barclay's Bank",2,"Two",0,2,109
+130,"Old Christchurch Road, 83 - 101, Dalkeith Buildings",9,"Two",0,10,110
+131,"Owls Road, 9, Burlington Hotel",1,"Two",0,1,111
+132,"Palmerston Road, 58 - 62, Water Tower",1,"Two",0,1,112
+133,"Parkwood Road, 13, Former Boscombe Convent",6,"Two",0,1,113
+134,"Poole Hill, 2 & 4, Pars Corner",1,"Two",0,1,114
+135,"Poole Hill, 6 - 18, Branksome Terrace",7,"Two",0,7,115
+136,"Poole Hill, 18A - 20, Branksome Terrace",1,"Two",0,1,115
+137,"Poole Hill, 20a - 22, Branksome Terrace",1,"Two",0,1,115
+138,"Poole Hill, 24 - 34, Branksome Terrace",6,"Two",0,6,115
+139,"Poole Hill, 1 - 3, Corner House Hotel",1,"Two",0,1,116
+140,"Poole Hill, 5 - 11; West Hill Road 39 - 41, Pembroke stables",1,"Two",0,1,117
+141,"Poole Hill, 13 - 31, Pembroke Hotel",3,"Two",0,1,118
+142,"Poole Hill, 39",1,"Two",0,1,119
+143,"Poole Hill, 41 - 45, former Bournemouth School of Art",1,"Two",0,1,120
+144,"Poole Lane, 280 - 286, Lady Wimborne Cottages",4,"Two",0,4,121
+145,"Poole Lane, 310 & 312, Lady Wimborne Cottages",2,"Two",0,2,122
+146,"Poole Road, Church of Saint Michael",1,"Church B, Tower A",0,1,123
+147,"Poole Road, Church of Saint Michael, Church Hall",1,"Two",0,1,124
+148,"Poole Road, Bourne Hall, former hotel annexe",1,"Two",0,1,125
+149,"Poole Road, West Cliff Baptist Church & Hall",2,"Two",0,2,126
+150,"Poole Road 69 & 71, Westbourne Arcade 1 - 24",25,"Two",0,1,127
+151,"Portarlington Road, 4, ""Westover""",1,"Two",0,1,128
+152,"Post Office Road, Head Post Office, main facade",1,"Two",0,1,129
+153,"Richmond Hill, 38, Constitutional Club",1,"Two",0,1,130
+154,"Richmond Hill, 48, Norfolk Royale Hotel",1,"Two",0,1,131
+155,"Richmond Hill, 56 ""Walton House"" & 58 ""Salisbury House""",1,"Two",0,1,132
+156,"Richmond Hill, 17 & 19, Echo Office",1,"Two",0,1,133
+157,"Richmond Hill, 21, Granville Chambers",1,"Two",0,1,134
+158,"Ringwood Road, Longham Bridge",0,"Two",1,0,135
+159,"Russell-Cotes road, Russel-Cotes Art Gallery & Museum",1,"Two*",0,1,136
+161,"Saint Anthony's Road, 11",1,"Two",0,1,138
+162,"Saint Anthony's Road, 20",1,"Two",0,1,139
+163,"Saint Augustin's Road, The Church of Saint Augustin",1,"B",0,1,140
+164,"Saint Catherine's Road, 36a & 38, ""Sterlings""",1,"Two",0,1,141
+165,"Saint Catherine's Road, 61, ""The Briar Patch""",1,"Two",0,1,142
+166,"Saint Clement's Road, Saint Clement's Church",1,"A",0,1,143
+169,"Saint Clement's Road, Vicarage garden walls",0,"Two",1,0,146
+170,"Saint Clement's Road, Saint Clement's School",1,"Two",0,1,147
+171,"Saint Clement's Road, Saint Clement's Schoolhouse & 12a",2,"Two",0,2,148
+172,"Saint Clement's Road, House of Bethany",1,"Two*",0,1,149
+173,"Saint Michael's Road, 6, former Freemason's Hall",1,"Two",0,1,150
+174,"Saint Stephen's Road, Church of Saint Stephen",1,"A",0,1,151
+175,"Saint Stephen's Road, Royal National Hospital",5,"Two",0,1,152
+177,"Saint Winifred's Road, 7",1,"Two",0,1,154
+178,"School Lane, Lulworth, Talbot Village",1,"Two",0,1,155
+179,"School Lane, Saint Mark's School, Talbot Village",2,"Two",0,1,156
+180,"School Lane, Almshouses, Talbot Village",7,"Two",0,7,157
+181,"School Lane, Rose Cottage, Talbot Village",1,"Two",0,1,158
+182,"School Lane, Myrtle Cottage, Talbot Village",1,"Two",0,1,159
+183,"School Lane, Pleasant Cottage, Talbot Village",1,"Two",0,1,160
+184,"School Lane, White Farmhouse, Talbot Village",1,"Two",0,1,161
+185,"School Lane, Storehouses & barn at White Farm, Talbot Villag",4,"Two",0,3,162
+186,"Seafield Road, Water Tower",1,"Two",0,1,163
+187,"Seamoor Road, 2, Pantechnicon",1,"Two",0,1,164
+188,"Seamoor Road, 4, ""J. J. Allen Funeral Service""",1,"Two",0,1,165
+189,"Southbourne Road, Pokesdown United Reformed Church & Sunday",2,"Two",0,2,166
+190,"Stafford Road, 29 - 31, The County Court",2,"Two",0,1,167
+191,"Sterte Lane, Magdalen Cottage",1,"Two",0,1,168
+192,"Talbot Avenue, adj 59, Holdenhurst Parish Boundary Pier",0,"Two",1,0,169
+193,"Throop Road, Gas Street Lamp",0,"Two",1,0,19
+194,"Throop Road, Piggery with curved wall",2,"Two",0,2,170
+195,"Throop Road, Muccleshell Cottages 1 & 2",2,"Two",0,2,171
+196,"Throop Road, Meadow View & Little Mead",2,"Two",0,2,172
+198,"Throop Road, Vine Cottage",1,"Two",0,1,173
+199,"Throop Road, Old Malt House",1,"Two",0,1,174
+200,"Throop Road, Stourview",1,"Two",0,1,175
+201,"Throop Road, Wall & Railings to Stourview",0,"Two",1,0,176
+202,"Throop Road, Gas Street Lamp",0,"Two",1,0,19
+203,"Throop Road, Hicks' Farmhouse",8,"Two",0,1,177
+204,"Throop Road, Throop Mill Cottage",1,"Two",0,1,178
+205,"Throop Road, Gas Street Lamp",0,"Two",1,0,19
+206,"Throop Road, Barn to north west of River Farmhouse.",1,"Two",0,1,179
+207,"Throop Road, River Farmhouse",1,"Two",0,1,180
+208,"Throop Road, Stables to north east of River Farmhouse",2,"Two",0,1,181
+209,"Throop Road, Throop Flour Mill, Parsons & Sons",1,"Two",0,1,182
+210,"Throop Road, Gas Street Lamp",0,"Two",1,0,19
+211,"Throop Road, stables & cob wall, west of Throop House",1,"Two",1,1,183
+212,"Throop Road, Throop House",1,"Two",0,1,184
+213,"Throop Road, Gas Street Lamp",0,"Two",1,0,19
+214,"Throop Road, Gas Street Lamp",0,"Two",1,0,19
+215,"Throop Road, Gas Street Lamp",0,"Two",1,0,19
+216,"Throop Road, Gas Street Lamp",0,"Two",1,0,19
+217,"Throop Road, Gas Street Lamp",0,"Two",1,0,19
+218,"Upper Terrace Road, 1 - 9",9,"Two",9,9,185
+219,"Wallisdown Road, 28, Talbot Village",1,"Two",0,1,186
+220,"Wallisdown Road, 38, Talbot Village",1,"Two",0,1,187
+221,"Wallisdown Road, 48, Talbot Village",1,"Two",0,1,188
+222,"Wallisdown Road, 58, Talbot Village",1,"Two",0,1,189
+223,"Wallisdown Road, 88, Talbot Village",1,"Two",0,1,190
+224,"Wallisdown Road, 100, Talbot Village",1,"Two",0,1,191
+225,"Wallisdown Road, 112, Talbot Village",1,"Two",0,1,192
+226,"Wallisdown Road, 122, Talbot Village",1,"Two",0,1,193
+227,"Wallisdown Road, 132, Talbot Village",1,"Two",0,1,194
+228,"Wallisdown Road, 142, Talbot Village",1,"Two",0,1,195
+229,"Wallisdown Road, 150, Talbot Village",1,"Two",0,1,196
+230,"Wallisdown Road, 158, Talbot Village",1,"Two",0,1,197
+231,"Wallisdown Road, Church of Saint Mark",2,"Church C Tower B",0,1,198
+234,"Wallisdown Road, 190, Talbot Village",1,"Two",0,1,200
+235,"Wallisdown Road, 198, Talbot Village",1,"Two",0,1,201
+236,"Water Lane, off Brecon Close, Water Lane Farm",5,"Two",0,1,202
+237,"West Cliff Road, Church of Saint Ambrose",3,"B",0,1,203
+238,"West Hill Road, 25 - 29, former Pembroke Arms/Shades",2,"Two",0,2,204
+239,"West Hill Road, 101, former Unitarian Church",1,"Two",0,1,205
+240,"Westover Road, 1 - 4a",1,"Two",0,1,206
+241,"Westover Road, 1 - 4a, canopy over pavement",0,"Two",1,0,206
+242,"Westover Road, 5 - 7, Westover Gardens Hotel",3,"Two",0,3,207
+243,"Westover Road, 5 - 7, canopy over pavement",0,"Two",0,0,207
+244,"Westover Road, The Pavilion Theatre, terrace & steps",1,"Two",3,1,208
+245,"Wharncliff Road, 14",1,"Two",0,1,209
+246,"Wick Lane, 28, Tuckton Public Library",1,"Two",0,1,210
+247,"Wick Lane, 78 - 84, Wick House, Wick Village",1,"Two",0,1,211
+248,"Wick Lane, 49 & 49b, Riverside Cottage, Wick Village",2,"Two",0,2,212
+249,"Wick Lane, 90, Wick Farmhouse, Wick Village",1,"Two",0,1,213
+250,"Wick Lane, The Sanctuary, Wick Village",1,"Two",0,1,214
+251,"Wick Lane, Barn and two Storehouses at Wick Farm",3,"Two",0,3,215
+252,"Wick Lane, The Well House, with stables and outhouse",3,"Two",0,3,216
+253,"Wick Lane, 99 ""Quality"" and 101 ""Tranquility""",2,"Two",0,2,217
+254,"Wimborne Road, Cemetery Chapel",8,"Two",0,1,218
+255,"Wimborne Road, Church of Saint Luke",3,"C",0,1,219
+256,"Wimborne Road, 624 - 626, Winton Public Library",1,"Two",0,1,220
+257,"Wimborne Road, Church of Saint John",1,"B",1,1,221
+258,"Wimborne Road, 965, Old Saint John's Buildings",1,"Two",0,1,222
+259,"Wimborne Road, 1300, Ensbury Dower House",1,"Two",0,1,223
+260,"Wimborne Road, 1492 - 1494, former Dolphin Inn",1,"Two",0,1,224
+261,"Windham Road, 244 - 248",3,"Two",0,3,225
+262,"Wollaston Road, Saint Katharine's Church Hall",1,"Two",0,1,226
+263,"Christchurch Road, 45a, Church of Christ Scientist",1,"Two",0,1,227
+264,"Michelgrove Road, San Remo Towers",1,"Two",0,1,228
+265,"Mallard Road, adj 16, Bus Depot",7,"Two",0,2,229
+266,"Beechwood Avenue, Shelley Manor Theatre",4,"Two",0,1,230
+267,"Poole Road, 40, The Grand (bingo hall)",5,"Two",0,1,231
+268,"Old Christchurch Road, 103, Dalkeith Buildings",1,"Two",0,1,232
+269,"Bourne Avenue, Town Hall",1,"",0,0,0
+271,"Boscombe Pier",1,"",0,0,0
+270,"68 Gladstone Road",1,"Two",0,0,0
+272,"Wimborne Road, Cemetery Mortuary",0,"",0,0,0
+273,"Wimborne Road, Cemetery Mausoleum",0,"",0,0,0
