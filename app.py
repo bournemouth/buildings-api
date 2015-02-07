@@ -1,4 +1,4 @@
-from flask import Flask, abort
+from flask import Flask, abort, Response
 import csv
 import json
 import os
@@ -47,6 +47,9 @@ def read_csv(f):
         cache[f] = out
     return out
 
+def json_response(data):
+    return Response(json.dumps(data), content_type='application/json; charset=utf-8')
+
 @app.route('/<controller>/<data>')
 @app.route('/<controller>/<data>/<identity>')
 @app.route('/<controller>/<data>/<identity>/<field>')
@@ -56,20 +59,20 @@ def handle(controller, data, identity=None, field=None):
         abort(404)
     csv = read_csv(f)
     if not identity and not field:
-        return json.dumps(csv)
+        return json_response(csv)
     item = {}
     if identity:
         item = find_by_field_value(csv, 'id', identity)
         if not item:
             abort(404)
     if not field:
-        return json.dumps(item)
+        return json_response(item)
     else:
         out = dict_for_field(item, field)
         if out:
-            return json.dumps(out)
+            return json_response(out)
         else:
             abort(404)
-        
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
