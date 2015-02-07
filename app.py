@@ -74,6 +74,8 @@ def index():
 def controller(controller):
     response = {'_embedded':{}}
     resources = []
+    if not os.path.exists('data/' + controller):
+        abort(404)
     for res in os.listdir('data/' + controller):
         obj = {}
         obj['name'] = res.split('.')[0]
