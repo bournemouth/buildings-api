@@ -18,27 +18,31 @@ def dict_for_field(data, field):
     json[field] = data[field]
     return json
 
+cache = {}
+
 def read_csv(f):
-    out = []
-    with open(f) as data:
-        reader = csv.reader(data)
-        keys = []
-        read_keys = False
-        idx = 0
-        for row in reader:
-            if not read_keys:
-                keys = [key.lower() for key in row]
-                if not 'id' in keys:
-                    keys.append('id')
-                read_keys = True
-            else:
-                data = {}
-                for i in range(len(row)):
-                    data[str(keys[i])] = row[i]
-                if not 'id' in data:
-                    data['id'] = idx
-                out.append(data)
-                idx += 1
+    out = cache[f]
+    if not out:
+        with open(f) as data:
+            reader = csv.reader(data)
+            keys = []
+            read_keys = False
+            idx = 0
+            for row in reader:
+                if not read_keys:
+                    keys = [key.lower() for key in row]
+                    if not 'id' in keys:
+                        keys.append('id')
+                    read_keys = True
+                else:
+                    data = {}
+                    for i in range(len(row)):
+                        data[str(keys[i])] = row[i]
+                    if not 'id' in data:
+                        data['id'] = idx
+                    out.append(data)
+                    idx += 1
+        cache[f] = out
     return out
 
 @app.route('/<controller>/<data>')
