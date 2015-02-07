@@ -50,6 +50,35 @@ def read_csv(f):
 def json_response(data):
     return Response(json.dumps(data), content_type='application/json; charset=utf-8')
 
+def add_hal_links(item, controller, data):
+    link_self = "/" + controller + "/" + data + "/" + str(item['id'])
+    item['_links'] = {"self": {"href": link_self}}
+
+
+@app.route('/')
+def index():
+    response = {'_embedded':{}}
+    resources = []
+    for res in os.listdir('data'):
+        obj = {}
+        obj['name'] = res
+        obj['_links'] = {'self':{'href': '/' + res}}
+        resources.append(obj)
+    response['_embedded']['resources'] = resources
+    return json.dumps(response)
+
+@app.route('/<controller>')
+def controller(controller):
+    response = {'_embedded':{}}
+    resources = []
+    for res in os.listdir('data/' + controller):
+        obj = {}
+        obj['name'] = res.split('.')[0]
+        obj['_links'] = {'self':{'href': '/' + res.split('.')[0]}}
+        resources.append(obj)
+    response['_embedded']['resources'] = resources
+    return json.dumps(response)
+
 @app.route('/<controller>/<data>')
 @app.route('/<controller>/<data>/<identity>')
 @app.route('/<controller>/<data>/<identity>/<field>')
@@ -59,17 +88,22 @@ def handle(controller, data, identity=None, field=None):
         abort(404)
     csv = read_csv(f)
     if not identity and not field:
-        return json_response(csv)
+        for item in csv:
+            add_hal_links(item, controller, data)
+        response = {'_links':{'self':{'href': '/' + controller + '/' + data}}, 'size': len(csv), '_embedded': csv}
+        return json_response(response)
     item = {}
     if identity:
         item = find_by_field_value(csv, 'id', identity)
         if not item:
             abort(404)
     if not field:
+        add_hal_links(item, controller, data)
         return json_response(item)
     else:
         out = dict_for_field(item, field)
         if out:
+            add_hal_links(item, controller, data)
             return json_response(out)
         else:
             abort(404)
