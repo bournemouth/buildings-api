@@ -21,7 +21,7 @@ def dict_for_field(data, field):
 cache = {}
 
 def read_csv(f):
-    out = None
+    out = []
     if f in cache:
         out = cache[f]
     if not out:
