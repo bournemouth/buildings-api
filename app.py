@@ -19,6 +19,17 @@ def dict_for_field(data, field):
     json[field] = data[field]
     return json
 
+def sanitize_keys(keys):
+    for index, key in enumerate(keys):
+        if "postcode" in key:
+            keys[index] = "postcode"
+        if "xcoord" in key:
+            keys[index] = "x"
+        if "ycoord" in key:
+            keys[index] = "y"
+        if key.endswith("tel"):
+            keys[index] = "telephone"
+
 cache = {}
 
 def read_csv(f):
@@ -34,6 +45,7 @@ def read_csv(f):
             for row in reader:
                 if not read_keys:
                     keys = [key.lower() for key in row]
+                    sanitize_keys(keys)
                     if not 'id' in keys:
                         keys.append('id')
                     read_keys = True
